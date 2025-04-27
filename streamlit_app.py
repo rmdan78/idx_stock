@@ -19,9 +19,8 @@ def calculate_features(data):
     return data
 
 
-st.title('Stock Price Prediction')
-st.header('Input Ticker Saham')
-st.header('Input Ticker Saham')
+st.title('Stock Price Predictio')
+st.header('Input Ticker Stock For indonesian stock add .jk example "BBCA.JK"')
 ticker = st.text_input('Ticker', value='AAPL')
 
 
@@ -65,10 +64,10 @@ if st.button('Predict'):
         st.plotly_chart(fig)
         Close = float(latest_data['Close'])
 
-        st.subheader(f'Latest Close Price for {ticker} {end_date}: Rp{Close:,.2f}')
+        st.subheader(f'Latest Close for {ticker} Date: {end_date}  Price: Rp{Close:,.2f}')
+        st.subheader(f'Predicted Close: Rp{predicted_price:,.2f}')
+        st.warning("⚠️ This app is for educational purposes only. The stock price predictions provided here are not financial advice. Please do your own research before making any investment decisions.")
 
-
-        st.subheader(f'Predicted Close Price for {ticker}: Rp{predicted_price:,.2f}')
 
     else:
         st.error(f'No data found for ticker: {ticker}')
