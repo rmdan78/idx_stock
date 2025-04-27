@@ -60,7 +60,7 @@ if st.button('Predict'):
         
         # Melakukan prediksi menggunakan pipeline
         prediction = pipeline.predict(input_data)
-
+        predicted_price = float(prediction.iloc[0]) 
         # Menampilkan grafik garis harga penutupan 3 bulan terakhir
         fig = px.line(
         stock_data,
@@ -77,7 +77,7 @@ if st.button('Predict'):
 
 
         # Menampilkan hasil prediksi dalam format Rupiah
-        st.subheader(f'Predicted Close Price for {ticker}: Rp{float(prediction.iloc[0]):,.2f}')
+        st.subheader(f'Predicted Close Price for {ticker}: Rp{float(predicted_price.iloc[0]):,.2f}')
 
     else:
         st.error(f'No data found for ticker: {ticker}')
