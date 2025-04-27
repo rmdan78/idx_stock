@@ -4,6 +4,8 @@ import pandas as pd
 from datetime import datetime, timedelta
 import plotly.express as px
 import pickle
+import os
+print(os.listdir())  # Menampilkan semua file di direktori saat ini
 
 
 # Muat model menggunakan pickle
