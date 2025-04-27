@@ -20,7 +20,7 @@ def calculate_features(data):
 
 
 st.title('Stock Price Prediction')
-st.info("This app uses a Neural Network-based model for stock price prediction. The model has been trained on historical stock data and includes technical features like moving averages and volatility.")
+st.info("This app uses a Neural Network-based model for stock price prediction. The model has been trained on historical stock data and includes technical features.")
 st.header('Input Ticker Stock')
 ticker = st.text_input('Ticker', value='BBCA.JK')
 
@@ -65,7 +65,7 @@ if st.button('Predict'):
         st.plotly_chart(fig)
         Close = float(latest_data['Close'])
 
-        st.subheader(f'Latest Close for {ticker} Date: {end_date}  Price: Rp{Close:,.2f}')
+        st.subheader(f'Latest Close : Rp{Close:,.2f}')
         st.subheader(f'Predicted Close: Rp{predicted_price:,.2f}')
         st.warning("⚠️ This app is for educational purposes only. The stock price predictions provided here are not financial advice. Please do your own research before making any investment decisions.")
 
