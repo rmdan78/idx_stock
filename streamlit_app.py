@@ -70,6 +70,7 @@ if st.button('Predict'):
         )
 
         st.plotly_chart(fig)
+        Close = float(latest_data['Close'])
 
         # Menampilkan harga penutupan terbaru dalam format Rupiah
         st.subheader(f'Latest Close Price for {ticker}: Rp{Close:,.2f}')
