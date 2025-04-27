@@ -22,7 +22,7 @@ def calculate_features(data):
 st.title('Stock Price Prediction')
 st.info("This app uses a Neural Network-based model for stock price prediction. The model has been trained on historical stock data and includes technical features like moving averages and volatility.")
 st.header('Input Ticker Stock')
-ticker = st.text_input('Ticker', value='AAPL')
+ticker = st.text_input('Ticker', value='BBCA.JK')
 
 
 if st.button('Predict'):
