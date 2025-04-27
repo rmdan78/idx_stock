@@ -59,7 +59,7 @@ if st.button('Predict'):
         stock_data,
         x=stock_data.index,
         y=stock_data['Close'].squeeze(), 
-        title="Harga Penutupan Saham 3 Bulan Terakhir"
+        title="Last 3 Months Closing Stock Price"
         )
 
         st.plotly_chart(fig)
