@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import plotly.express as px
 
 
-pipeline = joblib.load('stock_price_pipeline_updated.pkl')
+pipeline = joblib.load('model.pkl')
 
 
 def calculate_features(data):
