@@ -72,10 +72,4 @@ if st.button('Predict'):
 
     else:
         st.error(f'No data found for ticker: {ticker}')
-    st.markdown("""
-        ---
-        **Created by**: Muhammad Ramdan  
-        **GitHub**: [Link GitHub Anda]  
-        **LinkedIn**: [Link LinkedIn Anda]  
-        **Disclaimer**: This app is for educational purposes only. The predictions are based on a machine learning model and are not financial advice.
-    """)
+
