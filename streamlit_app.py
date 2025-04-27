@@ -60,7 +60,7 @@ if st.button('Predict'):
         
         # Melakukan prediksi menggunakan pipeline
         prediction = pipeline.predict(input_data)
-        predicted_price = float(prediction.iloc[0]) 
+        predicted_price = float(prediction[0]) 
         # Menampilkan grafik garis harga penutupan 3 bulan terakhir
         fig = px.line(
         stock_data,
